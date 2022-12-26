@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelly | Travel Agency</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!--we hav header /main / footer inside body-->
+    <header class="main_head">
+        <nav>
+        <h1 id="logo">Travelly</h1>
+        <ul>
+            <li>Locations</li>
+            <li>Benefits</li>
+            <li>Contact</li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Travel Beyond Limits.</h2>
+            <h3>Start your travel at an affordable price with Travelly<br>
+                Contact us now bellow.
+            </h3>
+            <button>Book Now</button>
+        </section>
+        <section class="locations">
+            <header class="locations_head">
+                <h2>The Perfect Travelling Experience</h2>
+                <h3>We cover everything from picking the perfect hotel,<br>
+                    flight and travelling destination.</h3>
+                    
+            </header>
+            <img src="./img/cloud.png" class= "moving-cloud-1 cloud"alt="cloud1">    
+                <img src="./img/cloud.png" class= "moving-cloud-2 cloud"alt="cloud1">
+        </section>
+        <section class="benefits">
+            <header class="benefits-head">
+                <h2>The Perfect Travel</h2>
+                <h3>We cover everything for picking the perfect hotel<br>
+                    to flight and destination.
+                </h3>
+            </header>
+            <div class="cards">
+                <!--Each car has 3 parts -->
+                <!--div for its icon -->
+                <!--h4 for its title -->
+                <!--p for its description -->
+                <div class="card">
+                    <div class="card-icon">
+                        <img class="card-img" src="./icons/route-solid.svg" alt="iconHere">
+                    </div>
+                    <h4>Travel</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sed deleniti modi ipsa blanditiis incidunt!</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <img class="card-img" src="./icons/bed-solid.svg" alt="iconHere">
+                    </div>
+                    <h4>Hotel</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sed deleniti modi ipsa blanditiis incidunt!</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <img class="card-img" src="./icons/airplane.svg" alt="iconHere">
+                    </div>
+                    <h4>Fly</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sed deleniti modi ipsa blanditiis incidunt!</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="form-wrapper">
+                <header class="form-head">
+                    <h2>Contact Us:</h2>
+                </header>
+                <form class="form" action="#DonerHere" method="post">
+                    <div class="name-form">
+                        <label for="name">Name:</label>
+                        <input id="name" type="text" required minlength="4">
+                    </div>
+                    <div class="email-form">
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" required>
+                    </div>
+
+                    <button type="button" value="Send">Submit</button>
+                </form>
+
+
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <h5>Travelly &copy;</h5>
+            <ul>
+                <li><a href="#" title="twitter-page">
+                    <img src="./icons/twitter.svg" alt="twitter_logo">
+                </a></li>
+                <li><a href="#" title="Youtube-page">
+                    <img src="./icons/youtube.svg" alt="youtube_logo">
+                </a></li>
+                <li><a href="#" title="instagram-page">
+                    <img src="./icons/instagram.svg" alt="instagram_logo">
+                </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

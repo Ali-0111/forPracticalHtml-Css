@@ -1,0 +1,397 @@
+/*Gloabl styles*/
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    border: 2px black solid;
+  }
+  
+  h1 {
+    font-size: 2.6rem;
+  }
+  li,
+  button,
+  label,
+  input,
+  p {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 4.8rem;
+  }
+  h3 {
+    font-size: 3rem;
+    font-weight: normal;
+  }
+  h4,
+  h5 {
+    font-size: 2.8rem;
+  }
+
+.main_head{
+    border:2px orange solid;
+    background: #131c27;
+    color: white;
+    position: sticky;
+    display: block;
+
+}
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px red solid;
+    width: 90%;
+    min-height: 10vh;
+    margin: auto;
+    padding: 2rem;
+
+    
+}
+
+nav ul{ 
+    border:2px solid green;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 40rem;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+#logo{
+    flex-grow: 2;
+    flex-shrink:1;
+    flex-basis: 40rem;
+    border : 2px solid purple;
+
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+    
+}
+
+ul li {
+    border: 2px solid blue;
+}
+
+
+.hero{
+    min-height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),url("./img/landing-page.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+
+    color :white;
+
+}
+.hero h3 {
+    padding:3rem;
+}
+
+.hero h2 {
+    border: 2px solid green;
+    font-size: 4.8rem;
+}
+.hero h3 {
+    border: 2px solid red;
+    font-size: 3rem;
+    font-weight: normal;
+}
+.hero button {
+    border: 2px solid blue;
+}
+.locations {
+    border: 2px solid green;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    background:url("./img/new-york-page.png"),linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+}
+.locations_head {
+    border: 2px solid purple;
+    width: 90%;
+    margin:auto;
+    
+}
+
+.locations_head h2 {
+    border:2px red solid;
+    padding: 1rem 0rem;
+    text-decoration: underline;
+    
+  }
+
+  .locations_head h3 {
+    border: green solid 2px;
+    padding: 4rem 0rem;
+    background: linear-gradient(#131c27, #663b34);
+    /*I did not know how background-clip works*/
+    background-clip: text;
+    
+    
+    
+  }
+
+  .cloud {
+      position: absolute;
+      right:0%;
+      top:0%;
+
+  }
+
+  .moving-cloud-1{
+      animation: cloudAnimation 3s alternate infinite ease-in-out;
+      opacity: 1;
+
+  }
+  .moving-cloud-2 {
+    top:20%;
+    z-index:-1;
+    opacity: 0.5;
+
+    animation: cloudAnimation 3.5s alternate infinite ease-in-out;
+    
+}
+
+
+
+
+
+
+  /*Cloud Animation*/
+
+
+  @keyframes cloudAnimation {
+      from
+      {
+        transform: translate(10%,-10%);
+      }
+      to{
+        transform:translate(0%,0%);
+      }
+  }
+
+.benefits{
+    border:2px orange solid;
+}
+.benefits-head {
+    padding:3rem;
+    border: solid red 2px;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #343c44;
+    color: white;
+    text-align: center;
+    
+
+    
+}
+.benefits-head h2 {
+    border: 2px solid blue;
+}
+.benefits-head h3 {
+    border: 2px solid green;
+}
+.cards {
+    border: rgb(0, 139, 30) solid 2px;   
+    min-height: 70vh;
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    
+
+}
+.card {
+    border: 2px solid orange;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    /* I dont know why text align effectd on card-img*/
+    text-align: center;
+    flex:1 1 30rem;
+}
+.card h4 {
+    border:2px solid blue;
+}
+
+.card p {
+    border:2px solid black;
+}
+.card-icon {
+    border: green 2px solid;
+    background: #27394e;
+    
+  }
+
+  .card-img {
+    border: red 2px solid;
+    max-width: 15%;
+    margin: 2rem;
+    
+  }  
+  #contact {
+      min-height: 100vh;
+      border : 2px solid green;
+      background: url("./img/contact-mountain.png") ,linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .form-wrapper {
+    border:2px solid white;
+      width: 60%;
+      
+      background-color: rgba(19, 28, 39, 0.8);
+      color:white;
+      border-radius: 20px;
+      
+  }
+
+  .form-head {
+    border:2px solid red;
+
+      text-align: center;
+      padding:4rem;
+  }
+  .form {
+    border:2px rgb(241, 184, 241) solid;
+  }
+  .name-form,.email-form {
+    border:2px solid green;
+
+      text-align:center;
+      padding:3rem;
+      margin-bottom: 1rem;
+  }
+
+  .form-wrapper label {
+      border: 2px solid green;
+      margin:0rem 3rem;
+  }
+
+  .form-wrapper button {
+      width: 100%;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding:2rem;
+      margin-top:8rem;
+      background: #4c6e97;
+      border:none;
+  }
+
+  .form-wrapper input {
+      padding: 1rem 3rem;
+  }
+  footer {
+    background: rgba(19, 28, 39, 1);
+    color: white;
+  }
+  .footer-wrapper{
+    width: 90%;
+    min-height: 10vh;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    padding:2rem;
+
+
+  }
+
+  .footer-wrapper h5 {
+    flex: 1 1 40rem;
+    border: 2px white solid;
+  }
+
+  .footer-wrapper ul {
+    border: 2px red solid;
+    flex:1 1 40rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-wrapper ul li {
+    border: 2px white solid;
+    
+  
+  }
+
+
+
+
+  /*Media Query*/
+
+
+  @media screen and (max-width:932px) {
+    html {
+      font-size: 45%;
+    }
+    nav {
+      text-align: center;
+    }
+    #logo{
+      padding: 2rem;
+    }
+
+    .moving-cloud-1 {
+      z-index: -1;
+    }
+    .moving-cloud-2 {
+      z-index: -2;
+    }
+    .locations_head h3 {
+      background: rgba(19, 28, 39, 0.9);
+      color: white;
+     
+    }
+    .card {
+      height: 50%;
+    }
+    footer {
+      text-align: center;
+    }
+    footer h5 {
+      padding: 1.5rem;
+    }
+  }
